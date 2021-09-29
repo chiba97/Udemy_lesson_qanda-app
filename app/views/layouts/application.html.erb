@@ -10,14 +10,14 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container ">
       <% if flash[:notice] %>
         <p class = "text-success"><%= flash[:notice] %></p>
       <% end %>
       <% if flash[:alert] %>
         <p class = "text-danger"><%= flash[:alert] %></p>
       <% end %>
-    <%= yield %>
+      <%= yield %>
     </div>
   </body>
 </html>
